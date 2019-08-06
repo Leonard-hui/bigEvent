@@ -93,6 +93,7 @@
             $('.btn-success').on('click', function (e) {
                 e.preventDefault();
                 //2.通过formData获取要修改的信息
+                // form里面的name属性要与data接口名称一致
                 var fd = new FormData($('form')[0]);
                 //3.发送ajax请求,完成修改
                 $.ajax({
